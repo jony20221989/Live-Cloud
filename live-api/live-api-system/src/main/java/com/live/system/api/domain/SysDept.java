@@ -1,4 +1,4 @@
-package domain;
+package com.live.system.api.domain;
 
 import com.live.common.core.domain.BaseEntity;
 import lombok.Data;

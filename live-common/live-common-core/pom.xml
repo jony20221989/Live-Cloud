@@ -15,9 +15,6 @@
         live-common-core核心模块
     </description>
 
-    <properties>
-
-    </properties>
 
     <dependencies>
 
@@ -43,6 +40,12 @@
         <dependency>
             <groupId>com.alibaba.fastjson2</groupId>
             <artifactId>fastjson2</artifactId>
+        </dependency>
+
+        <!-- Jwt -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
         </dependency>
 
         <!-- Java Servlet -->

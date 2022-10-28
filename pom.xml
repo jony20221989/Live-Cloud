@@ -73,26 +73,18 @@
                 <scope>import</scope>
             </dependency>
 
+            <!-- JWT -->
+            <dependency>
+                <groupId>io.jsonwebtoken</groupId>
+                <artifactId>jjwt</artifactId>
+                <version>${jjwt.version}</version>
+            </dependency>
+
             <!-- JSON 解析器和生成器 -->
             <dependency>
                 <groupId>com.alibaba.fastjson2</groupId>
                 <artifactId>fastjson2</artifactId>
                 <version>${fastjson.version}</version>
-            </dependency>
-
-
-            <!-- 核心模块 -->
-            <dependency>
-                <groupId>com.live</groupId>
-                <artifactId>live-common-core</artifactId>
-                <version>${live.version}</version>
-            </dependency>
-
-            <!-- 缓存服务 -->
-            <dependency>
-                <groupId>com.live</groupId>
-                <artifactId>live-common-redis</artifactId>
-                <version>${live.version}</version>
             </dependency>
 
             <!-- 线程传递值 -->
@@ -133,6 +125,27 @@
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml</artifactId>
                 <version>${poi.version}</version>
+            </dependency>
+
+            <!-- 核心模块 -->
+            <dependency>
+                <groupId>com.live</groupId>
+                <artifactId>live-common-core</artifactId>
+                <version>${live.version}</version>
+            </dependency>
+
+            <!-- 缓存服务 -->
+            <dependency>
+                <groupId>com.live</groupId>
+                <artifactId>live-common-redis</artifactId>
+                <version>${live.version}</version>
+            </dependency>
+
+            <!-- 系统接口 -->
+            <dependency>
+                <groupId>com.live</groupId>
+                <artifactId>live-api-system</artifactId>
+                <version>${live.version}</version>
             </dependency>
 
         </dependencies>

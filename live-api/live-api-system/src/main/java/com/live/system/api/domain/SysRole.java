@@ -1,4 +1,4 @@
-package domain;
+package com.live.system.api.domain;
 
 import com.live.common.core.annotation.Excel;
 import com.live.common.core.annotation.Excel.ColumnType;

@@ -32,6 +32,12 @@
             <artifactId>live-common-redis</artifactId>
         </dependency>
 
+        <!-- RuoYi Api System -->
+        <dependency>
+            <groupId>com.live</groupId>
+            <artifactId>live-api-system</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>

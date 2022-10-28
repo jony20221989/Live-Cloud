@@ -5,7 +5,7 @@ import com.live.common.core.constant.TokenConstants;
 import com.live.common.core.context.SecurityContextHolder;
 import com.live.common.core.utils.ServletUtils;
 import com.live.common.core.utils.StringUtils;
-//import com.ruoyi.system.api.model.LoginUser;
+import com.live.system.api.model.LoginUser;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.servlet.http.HttpServletRequest;
