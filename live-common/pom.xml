@@ -16,6 +16,9 @@
         <module>live-common-redis</module>
         <module>live-common-core</module>
         <module>live-common-security</module>
+        <module>live-common-log</module>
+        <module>live-common-datasource</module>
+        <module>live-common-datascope</module>
     </modules>
 
     <properties>

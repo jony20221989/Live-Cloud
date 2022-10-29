@@ -4,9 +4,14 @@ import com.live.common.core.annotation.Excel;
 import com.live.common.core.annotation.Excel.ColumnType;
 import com.live.common.core.annotation.Excel.Type;
 import com.live.common.core.annotation.Excels;
-import com.live.common.core.domain.BaseEntity;
-import lombok.Data;
+import com.live.common.core.web.domain.BaseEntity;
+import com.live.common.core.xss.Xss;
+import lombok.Getter;
+import lombok.Setter;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.List;
 
@@ -15,7 +20,8 @@ import java.util.List;
  * 
  * @author ruoyi
  */
-@Data
+@Getter
+@Setter
 public class SysUser extends BaseEntity
 {
     private static final long serialVersionUID = 1L;
@@ -30,18 +36,26 @@ public class SysUser extends BaseEntity
 
     /** 用户账号 */
     @Excel(name = "登录名称")
+    @Xss(message = "用户账号不能包含脚本字符")
+    @NotBlank(message = "用户账号不能为空")
+    @Size(min = 0, max = 30, message = "用户账号长度不能超过30个字符")
     private String userName;
 
     /** 用户昵称 */
     @Excel(name = "用户名称")
+    @Xss(message = "用户昵称不能包含脚本字符")
+    @Size(min = 0, max = 30, message = "用户昵称长度不能超过30个字符")
     private String nickName;
 
     /** 用户邮箱 */
     @Excel(name = "用户邮箱")
+    @Email(message = "邮箱格式不正确")
+    @Size(min = 0, max = 50, message = "邮箱长度不能超过50个字符")
     private String email;
 
     /** 手机号码 */
     @Excel(name = "手机号码")
+    @Size(min = 0, max = 11, message = "手机号码长度不能超过11个字符")
     private String phonenumber;
 
     /** 用户性别 */
@@ -88,7 +102,26 @@ public class SysUser extends BaseEntity
     /** 角色ID */
     private Long roleId;
 
+    public SysUser()
+    {
 
+    }
+
+    public SysUser(Long userId)
+    {
+        this.userId = userId;
+    }
+
+
+    public boolean isAdmin()
+    {
+        return isAdmin(this.userId);
+    }
+
+    public static boolean isAdmin(Long userId)
+    {
+        return userId != null && 1L == userId;
+    }
 
 
 }

@@ -1,0 +1,3 @@
+# Project exclude paths
+/live-common/live-common-core/target/
+/live-common/live-common-redis/target/

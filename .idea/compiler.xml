@@ -5,14 +5,19 @@
       <directory url="file://$PROJECT_DIR$/src/main/resources/archetype-resources" includeSubdirectories="true" />
     </excludeFromCompile>
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="live-api-system" />
         <module name="live-common-security" />
+        <module name="live-common-datasource" />
         <module name="live-common-redis" />
+        <module name="live-modules-system" />
+        <module name="live-common-datascope" />
+        <module name="live-api-system" />
         <module name="live-common-core" />
+        <module name="live-common-log" />
       </profile>
     </annotationProcessing>
   </component>

@@ -7,6 +7,8 @@
     <modules>
         <module>live-common</module>
         <module>live-api</module>
+        <module>live-modules</module>
+        <module>live-modules/live-modules-system</module>
     </modules>
     <name>live</name>
 
@@ -114,6 +116,34 @@
                 <version>3.4.22</version>
             </dependency>
 
+            <!-- Druid -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
+            <!-- Dynamic DataSource -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>${dynamic-ds.version}</version>
+            </dependency>
+
+            <!-- Mybatis 依赖配置 -->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${spring-boot.mybatis}</version>
+            </dependency>
+
+            <!-- pagehelper 分页插件 -->
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper-spring-boot-starter</artifactId>
+                <version>${pagehelper.boot.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.projectlombok</groupId>
                 <artifactId>lombok</artifactId>
@@ -145,6 +175,40 @@
             <dependency>
                 <groupId>com.live</groupId>
                 <artifactId>live-api-system</artifactId>
+                <version>${live.version}</version>
+            </dependency>
+
+            <!-- 安全模块 -->
+            <dependency>
+                <groupId>com.live</groupId>
+                <artifactId>live-common-security</artifactId>
+                <version>${live.version}</version>
+            </dependency>
+
+            <!-- 日志记录 -->
+            <dependency>
+                <groupId>com.live</groupId>
+                <artifactId>live-common-log</artifactId>
+                <version>${live.version}</version>
+            </dependency>
+
+            <!-- 权限范围 -->
+            <dependency>
+                <groupId>com.live</groupId>
+                <artifactId>live-common-datascope</artifactId>
+                <version>${live.version}</version>
+            </dependency>
+
+            <!-- 多数据源 -->
+            <dependency>
+                <groupId>com.live</groupId>
+                <artifactId>live-common-datasource</artifactId>
+                <version>${live.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.live</groupId>
+                <artifactId>live-modules-system</artifactId>
                 <version>${live.version}</version>
             </dependency>
 

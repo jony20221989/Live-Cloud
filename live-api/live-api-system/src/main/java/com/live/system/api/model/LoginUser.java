@@ -1,5 +1,6 @@
 package com.live.system.api.model;
 
+
 import com.live.system.api.domain.SysUser;
 import lombok.Data;
 

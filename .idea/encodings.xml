@@ -7,12 +7,22 @@
     <file url="file://$PROJECT_DIR$/live-api/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/live-common/live-common-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/live-common/live-common-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/live-common/live-common-datascope/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/live-common/live-common-datascope/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/live-common/live-common-datasource/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/live-common/live-common-datasource/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/live-common/live-common-log/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/live-common/live-common-log/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/live-common/live-common-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/live-common/live-common-redis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/live-common/live-common-security/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/live-common/live-common-security/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/live-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/live-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/live-modules/live-modules-system/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/live-modules/live-modules-system/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/live-modules/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/live-modules/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
