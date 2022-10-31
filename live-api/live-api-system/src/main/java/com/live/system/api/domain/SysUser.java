@@ -1,5 +1,6 @@
 package com.live.system.api.domain;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.live.common.core.annotation.Excel;
 import com.live.common.core.annotation.Excel.ColumnType;
 import com.live.common.core.annotation.Excel.Type;
@@ -81,6 +82,7 @@ public class SysUser extends BaseEntity
 
     /** 最后登录时间 */
     @Excel(name = "最后登录时间", width = 30, dateFormat = "yyyy-MM-dd HH:mm:ss", type = Type.EXPORT)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date loginDate;
 
     /** 部门对象 */
